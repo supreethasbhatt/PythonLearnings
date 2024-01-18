@@ -31,3 +31,35 @@ Python is a dynamically typed language. Why?
 Statically typed --> C++
 
 Value "None" --> just to represent null.  class <NoneType>
+
+Escape sequences : back slash --> https://docs.python.org/3/reference/lexical_analysis.html#escape-sequences
+
+String Formatting:
+~~~~~~~~~~~~~~~~~~~~
+1. f-string : f"This is what number {number} looks like" - where numner is int
+2. format method : "This is what number {} looks like".format(number)
+3. deprecated : "This is what number %d looks like" %(number)
+
+Strings and indexes:
+~~~~~~~~~~~~~~~~~~~~
+individual letter in the strings can be accessed by indices starting with 0.
+
+Eg: 
+x="supreetha"
+x[0] = s
+x[1] = u
+x[-1] = a
+
+Converting Data types:
+~~~~~~~~~~~~~~~~~~~~~~~~
+explicitly call the type of the fata type.
+my_list = [1,2,3]
+my_list_str = str(my_list)
+
+
+Ask user input 
+~~~~~~~~~~~~~~~
+input
+
+eg:
+name input = input()
