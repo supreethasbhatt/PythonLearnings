@@ -6,12 +6,12 @@ What are loops?
 
 Iterable object?
 
+
 for loops:
-~~~~~~~~~~~~~
-collection of data like string,list of data
->> for ever number in the list, for every letter in the string
->> syntax :
-    **for** item **in** **iterable_object**
+1. collection of data like string,list of data
+2. for ever number in the list, for every letter in the string
+3. syntax :
+    **for** item **in** iterable_object
 
 
 while loops:
