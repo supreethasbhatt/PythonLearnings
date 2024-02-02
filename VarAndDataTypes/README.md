@@ -11,11 +11,11 @@ Naming restriction for variables:
 3. variables are case sensitive
 
 Naming conventions:
-1. Use snale_case
+1. Use snake_case
 2. most variables should be variables
-3. constants should be capital( CAPITAL_SNAL_CASE)
+3. constants should be capital( CAPITAL_SNAKE_CASE)
 4. UpperCamelCase refer to class
-5. Variables starting with 2 undescores are called dunders(double underscores) which are private and are left alone. Eg: __no_touchy__, __main__
+5. Variables starting with 2 undescores are called dunders(double underscores) which are private and are left alone. Eg: __no_touchy__, __main__,__name__
 
 Data types:
 Every assignment should be a common data type.
