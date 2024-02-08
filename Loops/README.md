@@ -36,3 +36,8 @@ Anything you can do with for loop, you can do with while loop, but the vice vers
     magic_word = 'please'
     while user_response != magic_word:
         print("Ah Ah Ah - You did not say the magic words.")
+
+
+Break:
+~~~~~~~
+1. used to exit out of the loops as and wehn wanted
