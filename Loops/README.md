@@ -24,5 +24,15 @@ for loops:
     range(1,7) - gives numbers from 1 to 7
     range(1,8,2) - gives numbers from 1 to 8 but skips by 2. i.e. 1,3,5,7
     range(7,0,-1) - gives numbers from 7 to 0 in reverse order. i.e. 7,6,5,4,3,2,1
+
+
 while loops:
 ~~~~~~~~~~~~
+Anything you can do with for loop, you can do with while loop, but the vice versa is not true.
+    >> while is_true:
+        statement
+
+    ex :
+    magic_word = 'please'
+    while user_response != magic_word:
+        print("Ah Ah Ah - You did not say the magic words.")
