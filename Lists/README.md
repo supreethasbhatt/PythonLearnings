@@ -48,7 +48,7 @@ Lists have a lot of built in methods.
 
           or
       
-      i=0
+    >> i=0
       while i < len(number):
          print(numbers[i])
          i = i+1
