@@ -16,6 +16,7 @@ lists = ['a',1,2,'hello',4]
 Lists have a lot of built in methods.
 
 **Built In functions of list:**
+
 **~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~**
 1. **len** : length - returns the number of items in the list.
     >> print(len(list_name))
@@ -23,6 +24,7 @@ Lists have a lot of built in methods.
     >> number_lis = list(range(1,4))
 
 **Accessing values in a List:**
+
 **~~~~~~~~~~~~~~~~~~~~~~~~~~~~**
 1. Lists always start with 0 index
 2. print a particular data in a list, use []. It can be accessed using positive and negative integers.
@@ -37,6 +39,7 @@ Lists have a lot of built in methods.
             "hello" in friends ---> returns false
 
 **Iterating over lists:**
+
 **~~~~~~~~~~~~~~~~~~~~~**
 1. Print each item in the list can be done using "for" or "while". With while loop you would have to first get the length of the numbers handy. This can be done using the len function.
    >> number = [1,2,3,4]
