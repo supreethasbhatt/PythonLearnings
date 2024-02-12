@@ -81,11 +81,11 @@ Lists have a lot of built in methods.
 
 **Deleting Items from a list**
 
-1. clear : Lest common used. Removes all the items in the list and empties it. 
+1. **clear** : Lest common used. Removes all the items in the list and empties it. 
     >> eg: items = ["socks","pant","shoe"]
             items.clear() ---> empties the entire list. Returns an empty list.
 
-2. pop : Removes one element from the list. If yoused without position, removes the last element from the list. You can also capture the item being popped out. 
+2. **pop** : Removes one element from the list. If yoused without position, removes the last element from the list. You can also capture the item being popped out. 
     >> eg: items: [1,2,3,4,5]
             items.pop() ----> removes 5
             items = [1,2,3,4]
@@ -93,22 +93,48 @@ Lists have a lot of built in methods.
             items = [1,3,4]
             last_items = items.pop() -----> value 4 would be stored in last_items
 
-3. remove : Provide the item that has to be removed. It removes the first instance of the item specified. If the item does not exist, it would throw an error.
+3. **remove** : Provide the item that has to be removed. It removes the first instance of the item specified. If the item does not exist, it would throw an error.
     >> eg: names = ['sup','hello','what','bye','sup']
             names.remove('sup') ---> returned list would be ['hello','what','bye','sup']
             names.remov('tata') ---> It would throw an error saying the item is not in the list.
 
-Leftovers 
-1. index : Find the index of a value specified.
+**Leftovers** 
+
+1. **index** : Find the index of a value specified.
     >> eg: nums.index(5) --> returns the position where the first occurence of 5 is found.
             nums.index(5,1) --> find the position of the number 5 after the 1st index (2nd lement in the index)
             nums.index(5,1,4) --> Find the position of 5 between the 2 specified indexes i.e. 1st (2nd element) and 4th (5th element)
-2. Count : Returns the number of times "x" occurs in the list.
+2. **Count** : Returns the number of times "x" occurs in the list.
     >> eg: nums = [1,2,4,2,5,2,6,7,8]
             nums.count(2) ---> this returns 3
             nums.count(9) ---> this returns 0
 
-3. reverse : It reverses the elements of the list in place. 
+3. **reverse** : It reverses the elements of the list in place. 
     >> eg: nums = [1,2,3,4]
             reversed = nums.reverse()
             ----> reversed would have : [4,3,2,1]
+
+4. **sort** : sorts the values in ascending order. 
+    >> eg: another_list = [4,2,3,1]
+            another_list.sort() --> returns the o/p --> [1,2,3,4]
+
+5. **join** : sting method. Not list method. It adds the specified "String" to every item in the list. 
+    >> eg: num = [1,2,3,4] --> value inside the list should bea string for this to work.
+            '.hello'.join(num) ---> this would not work.
+
+            num = ['hello','how','doing']
+            '.bye'.join(num) ---> outputs : 'hello.byehow.byedoing'
+
+**Slicing in Lists**
+
+**~~~~~~~~~~~~~~~~~**
+1. Make new lists using the old lists. 
+2. The slicing is specified using square brackets. 
+3. syntax:
+        >> some_list[start:end:step]
+        >> eg: num = [1,2,3,4,5]
+                num[1:] ----> [2,3,4,5]
+                num[3:] ----> [5]
+                num[-1:] ----> [5]
+                num[-3] ----> [3,4,5]
+                num[0:2] ---> [1,2]
