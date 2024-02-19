@@ -135,6 +135,22 @@ Lists have a lot of built in methods.
         >> eg: num = [1,2,3,4,5]
                 num[1:] ----> [2,3,4,5]
                 num[3:] ----> [5]
+                num[:3] ----> [1,2,3,4]
                 num[-1:] ----> [5]
                 num[-3] ----> [3,4,5]
                 num[0:2] ---> [1,2]
+                num[1::-1] ---> [2,1]
+                num[:1:-1] --> [5,4,3,2]
+
+**List Comprehension:**
+
+**~~~~~~~~~~~~~~~~~~~**
+1. syntax :
+    [__ for __ in __ ]:
+    eg :
+    num = [1,2,3]
+    [x*10 for x in nums]:
+    >> tricky: [bool(val) for val in [0,[],'']] ----> gives : [false,false,false]
+2. List comprehension with conditional logic using keyword like if, else:
+    >> eg: num = [1,2,3,4,5,6]
+            evns = [num for num in numbers if num % 2 == 0]

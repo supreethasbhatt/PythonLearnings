@@ -30,3 +30,9 @@ for index in sounds:
 	result = result+index1
 
 print(result)
+
+
+# list comprehension
+original = "this is so much fun"
+new = ''.join(x for x in original if x not in 'aeiou')
+print(new)
