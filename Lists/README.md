@@ -172,6 +172,8 @@ Nestd lists:
     [[print(val) for val in x] for x in num]
 
     eg :
-    board = [[num for val in range(1,4)]for val in range(1,4)]
+    board = [[num for num in range(1,4)]for val in range(1,4)]
         --> outer: [1,2,3,]
         1st: [1] replaces it with [[1,2,3],2,3,4]
+        
+        
