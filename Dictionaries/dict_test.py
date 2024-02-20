@@ -66,4 +66,45 @@ stock_list['cookie'] = 18
 stock_list.pop('cake')
 
 
-    
+numbers = dict(a=1,b=2,c=3)
+
+squared_nums = {key : value **2 for key,value in numbers.items() }
+print(squared_nums)
+
+print({ num : num **2 for num in [1,2,3,4]}) # setting the value as num ** 2
+
+str1 = "supretha"
+str2 = "bhatt"
+print({str1[i] : str2[i] for i in range(0,len(str2))}) #map 2 lists 
+
+
+#change every key and every value upper cased in the below dictionary:
+name = {"first":"supreetha","middle":"s","last":"bhatt"}
+
+new_name = {key[0].upper()+key[1:]:value[0].upper()+value[1:] for key,value in name.items()}
+print(new_name)
+
+
+list1 = ["CA", "NJ", "RI"]
+list2 = ["California", "New Jersey", "Rhode Island"]
+
+# make sure your solution is assigned to the answer variable so the tests can work!
+answer = {list1[i]: list2[i] for i in range(0,3)}
+answer = dict(zip(list1,list2))  
+
+'''
+Create a dictionary called answer , that makes each first item in each list a key and
+the second item a corresponding value.  That's a terrible explanation. 
+I think it'll be easier if you just look at the end goal:
+
+{'name': 'Jared', 'job': 'Musician', 'city': 'Bern'} 
+
+
+'''
+person = [["name", "Jared"], ["job", "Musician"], ["city", "Bern"]] 
+answer = {i[0] : i[1] for i in person} # answer = dict(person) or answer = {k:v for k,v in person}
+print(answer)
+
+#assign the vowels the value 0
+answer = {}.fromkeys(['a','e','i','o','u'],0) #or answer = {char:0 for char in 'aeiou'} 
+

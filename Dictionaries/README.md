@@ -52,7 +52,7 @@ Accessing Data in dictionaries:
 3. fromkeys : Called on empty doctionary. Pass in iterable collection and value. It assigns each value of the key with an unknown value.
     {}.fromkeys("a",[1,2,3,4,5]) ---> {'a': [1, 2, 3, 4, 5]}
     new_dict_3 = {}.fromkeys("email",'unknown') #this will give 'e':'unknown','m':'unknown','a':'unknown'
-4. get() : retrives the key in an object and return NONE instead ofkey error if the key does not exist.
+4. get() : retrives the key in an object and return NONE instead of key error if the key does not exist.
 5. pop(value) : Removes an item from dict. Input: key. O/p: Returns the value but not key. An input is always needed here. 
     eg: new_dict.pop('email) --> gives the email
         new_dict.pop() --> error
@@ -60,9 +60,11 @@ Accessing Data in dictionaries:
 7. update : used to update the keys and values in the dictionary with another value.
     eg : first = dict(a=1,b=2,c=3)
         second.update(first)
+8. zip : used to create a dictionary from two lists. 
+    eg: answer = dict(zip(list1,list2))
 
 
-Data Modelling with Dictionaries:
+**Data Modelling with Dictionaries:**
 Model a playlist :
 Plalist has:
 1. Title, author, list of songs.
@@ -76,3 +78,15 @@ Plalist has:
         
         ]
     }
+
+**Dictionary Comprehension:**
+1. syntax:
+    {___:___ for __ in __ }
+    eg: squared_nums = {key : value **2 for key,value in numbers.items() }
+    - iterates over keys by default.
+    - to iterate over both keys and values use .items()
+    -   eg : 
+        str1 = "abcd"
+        str2 = "bhat"
+        print({str1[i] : str2[i] for i in range(0,len(str1))})
+        ---> {a:b,b:h,c:a,d:t}
