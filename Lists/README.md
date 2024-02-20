@@ -141,6 +141,7 @@ Lists have a lot of built in methods.
                 num[0:2] ---> [1,2]
                 num[1::-1] ---> [2,1]
                 num[:1:-1] --> [5,4,3,2]
+                reverse a string ---> list[::-1]
 
 **List Comprehension:**
 
@@ -154,3 +155,23 @@ Lists have a lot of built in methods.
 2. List comprehension with conditional logic using keyword like if, else:
     >> eg: num = [1,2,3,4,5,6]
             evns = [num for num in numbers if num % 2 == 0]
+
+Nestd lists:
+1. They are multi-dimensional lists
+2. USed in games like tic tak toe, complex data tructures: Tic Tac Toe
+3. eg: num = [[1,2,3],[4,5,6],[7,8,9]]
+        num[0][1] ---> gives 2
+4. Printing values in nested lists use 2 loops. 
+    num = [[1,2,3],[4,5,6],[7,8,9]]
+    for x in num:
+        for val in x:
+            print(val)
+
+5. Nested List Comprehension:
+    num = [[1,2,3],[4,5,6],[7,8,9]]
+    [[print(val) for val in x] for x in num]
+
+    eg :
+    board = [[num for val in range(1,4)]for val in range(1,4)]
+        --> outer: [1,2,3,]
+        1st: [1] replaces it with [[1,2,3],2,3,4]

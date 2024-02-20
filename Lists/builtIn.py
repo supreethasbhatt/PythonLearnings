@@ -36,3 +36,11 @@ print(result)
 original = "this is so much fun"
 new = ''.join(x for x in original if x not in 'aeiou')
 print(new)
+
+num = [[1,2,3],[4,5,6],[7,8,9]]
+for x in num:
+    for val in x:
+        print(val)
+        
+num = [["hi","bye"],[4,5,6],[7,8,9]]
+[[print(val) for val in x] for x in num]
