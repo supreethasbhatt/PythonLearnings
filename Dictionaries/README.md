@@ -13,6 +13,7 @@ Limitations of list:
     to store this in a list, it would be as: cart =[["Cat_litter",1,$33],["pencil",3,30]]
 
     Storing this data in a list is thus difficult and hence we would have to use a new data type for it. This can be done using dictionaries.
+3. You cannot use a list as key for dictionary, but can use a tuple.
 
 **Create and access dictionaries**
 1. It is a key value pair
@@ -51,6 +52,7 @@ Accessing Data in dictionaries:
     eg : 
 3. fromkeys : Called on empty doctionary. Pass in iterable collection and value. It assigns each value of the key with an unknown value.
     {}.fromkeys("a",[1,2,3,4,5]) ---> {'a': [1, 2, 3, 4, 5]}
+    answer = {}.fromkeys(['a','e','i','o','u'],0)
     new_dict_3 = {}.fromkeys("email",'unknown') #this will give 'e':'unknown','m':'unknown','a':'unknown'
 4. get() : retrives the key in an object and return NONE instead of key error if the key does not exist.
 5. pop(value) : Removes an item from dict. Input: key. O/p: Returns the value but not key. An input is always needed here. 
