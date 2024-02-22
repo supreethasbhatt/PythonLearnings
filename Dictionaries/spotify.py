@@ -15,3 +15,5 @@ for song in playlist["songs"]:
     duration = duration + song["duration"]
     
 print(duration)
+
+print(playlist.get("Title"))

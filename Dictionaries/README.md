@@ -54,7 +54,7 @@ Accessing Data in dictionaries:
     {}.fromkeys("a",[1,2,3,4,5]) ---> {'a': [1, 2, 3, 4, 5]}
     answer = {}.fromkeys(['a','e','i','o','u'],0)
     new_dict_3 = {}.fromkeys("email",'unknown') #this will give 'e':'unknown','m':'unknown','a':'unknown'
-4. get() : retrives the key in an object and return NONE instead of key error if the key does not exist.
+4. get() : retrives the key in an object and return NONE instead of key error if the key does not exist.Itreturns the value if the key is present
 5. pop(value) : Removes an item from dict. Input: key. O/p: Returns the value but not key. An input is always needed here. 
     eg: new_dict.pop('email) --> gives the email
         new_dict.pop() --> error

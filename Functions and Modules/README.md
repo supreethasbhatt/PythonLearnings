@@ -5,7 +5,7 @@
 4. DRY - Dont Repeat Yourself
 
 
-**syntax**
+**Syntax**
 1. def name_of_function():
         code xxx
 
@@ -42,3 +42,47 @@
         code
     
      print(fnction_name().__doc__) ----> This will add the function definition
+
+
+**MISC and IMP**
+1. * ---> *args --> gathers the  arguments into tuples and passes it to the function. This avoids specifying how many parameters have to be passed. 
+    eg : def fun_name(*args):
+            code
+        func_name(1,2,3)
+        func_name(2)
+
+2. ** ---> **kwargs --> gather remaining keyword args as a dictionary.
+    eg: def fav_colours(**kwargs):
+            code
+        fav_colour(sup="sup",rub="red")
+
+3. parameter ordering should be like below when there are multiple parameters involved:
+    a. parameter
+    b. *args
+    c. default parameters
+    d. **kwargs
+
+    eg: def display_info(a,b,*args,instructor = 'sup', **kwargs)
+
+**Tuples Unpacking**
+1. *args --> unpacks the values
+2. works with tuples and liste
+3. USed when calling the function.
+4. eg:
+    def function_1(*args):
+        code
+    
+    num=[1,2,3,4]
+    nums=(1,2,3,4)
+    function_1(*num) ---->if *num is not passed, the argument passed would be considered as ([1,2,3,4],) and would throw rror
+    function_1(*num)
+
+**Dictionary Unpacking**
+1. **kwargs --> Unpack dictionary into key word arguments
+2. used when calling functions containing dictionaries
+3. eg:
+    def function_1(**kwargs):
+        code
+    
+    num={"first":"colt","last":"Sup"}
+    function_1(**num) ---->if *num is not passed, the argument passed would be considered as disctionary and would throw rror

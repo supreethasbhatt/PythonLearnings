@@ -44,3 +44,12 @@ for x in num:
         
 num = [["hi","bye"],[4,5,6],[7,8,9]]
 [[print(val) for val in x] for x in num]
+
+#days
+def return_day(num):
+    try:
+        val = ["Sunday","Monday", "Tuesday","Wednesday","Thursday","Friday","Saturday"][num-1]
+    except IndexError as e:
+        return None
+
+print(return_day(5))

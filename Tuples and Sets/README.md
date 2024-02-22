@@ -63,3 +63,16 @@ Eg -
 **Set Comprehension**
 1. {x**2 for x in num} ---> returns a set with doubled values
 2. {x:x** 2 for x in num} ---> Creates a dictionarry with x as value and x**2 as value
+
+**Tuples Unpacking**
+1. *args --> unpacks the values
+2. works with tuples and liste
+3. USed when calling the function.
+e. eg:
+    def function_1(*args):
+        code
+    
+    num=[1,2,3,4]
+    nums=(1,2,3,4)
+    function_1(*num)
+    function_1(*num)
