@@ -32,7 +32,7 @@ def example1():
 
 
 def example2(): return (
-    '' in {'f': 2}) in {'has_key() is deprecated': True};
+    '' in {'f': 2}) in {'has_key() is deprecated': True}
 
 
 class Example3(object):

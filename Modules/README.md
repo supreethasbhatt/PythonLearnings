@@ -32,6 +32,17 @@
     import file1
 
     fn()
+3. import the module. Call the function name from the new module.
 
+**External Modules**
+1. They are downloaded from the internet
+2. PyPI
+3. pip install is the command used
 
-**
+**autopep8**
+1. used to clean up the code
+
+**__name**
+1. when run evry python file has a __name__ variable
+2. If the file isthe main file being run, its value is __main__
+3. Otherwise it is the filename
