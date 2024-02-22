@@ -6,7 +6,7 @@
 
 **MAP**
 1. accepts 2 arguments
-2. Requires an itrable
+2. Requires an iterable
 3. eg : double = map(lambda x: x*2,nums)
 4. These objects can be iterated only once.
 
