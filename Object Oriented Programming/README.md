@@ -79,3 +79,45 @@ print(user1.age)
 print(user1.sex)
 print(user1.usr_info())
 print(User.active_user)                                            -------> Ref to ClassName.class attribute
+
+**Class MEthods**
+1. @classmethod decorator
+2. Associated with the class itself and not instance.
+3. instead of self, slf/cls is passed as parameter
+4. called using Class_name.@classmethod
+
+
+**__repr__** :
+1. representation method
+2. Represents the class instance as a string.
+
+
+**Inheritance**
+1. Pull code from a part of another code.
+2. Syntax:
+    class PArent:
+        code
+    class child(Pasrent):
+        code
+3. **super** --> used to inherit attributes from the parent class. 
+    eg:
+        class Animal:
+
+                def __init__(self,name,species):
+                    self.name = name
+                    slf.species = species
+
+                def __repr__(self):
+                    print f{se;f.name} is a {self.species}"
+
+        class Cat(Animal):
+
+                def __init__(self,name,species,breed,toy):
+                    super().__init__(name,species)
+                    self.breead = breed
+                    self.toy = toy
+
+**@properties, @method.setter**
+1. Used to call class methods like without parenthesis
+
+ 
